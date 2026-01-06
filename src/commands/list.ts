@@ -1,13 +1,13 @@
 import { Command } from 'commander';
 import pc from 'picocolors';
-import { statements, Spot } from '../db.js';
+import { spotService } from '../services/spot.service.js';
 
 export const listCommand = new Command('list')
     .description('List all saved spots')
     .alias('ls')
     .action(() => {
         try {
-            const spots = statements.getAllSpots.all() as Spot[];
+            const spots = spotService.getSpots();
 
             if (spots.length === 0) {
                 console.log(pc.yellow('No spots saved yet.'));

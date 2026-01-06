@@ -1,56 +1,64 @@
 # 📍 Spot
 
-**Spot** es una utilidad de línea de comandos (CLI) minimalista diseñada para desarrolladores que crean proyectos constantemente y terminan con un disco duro lleno de carpetas olvidadas. 
+**Spot** is a minimalist CLI utility designed for developers who build constantly and end up with a hard drive full of forgotten folders.
 
-Con **Spot**, puedes registrar la ubicación de tus proyectos, detectar automáticamente su stack y consultarlos después sin tener que navegar por un laberinto de directorios.
+With **Spot**, you can register your projects' locations, automatically detect their stack, and query them later without navigating through a directory maze.
 
 ---
 
-## ✨ Características principales
+## ✨ Key Features
 
-- 🔍 **Detección Automática**: Reconoce si tu proyecto es **React, Next.js, Vue, Svelte o Node.js** analizando el `package.json`.
-- 🗄️ **Persistencia con SQLite**: Usa una base de datos local ligera y robusta. No necesita servidores ni configuraciones complejas.
-- ⚡ **Comandos ultra rápidos**: Diseñado para ser usado en menos de 2 segundos.
-- 📁 **Rutas Absolutas**: Guarda la ruta exacta para que puedas saltar a tus proyectos desde cualquier lugar.
+- 🔍 **Smart Detection**: Recognizes if your project is **React, Next.js, Vue, Svelte, or Node.js** by analyzing `package.json`.
+- 🗄️ **SQLite Persistence**: Uses a lightweight and robust local database. No servers or complex setups required.
+- ⚡ **Ultra-fast Commands**: Designed to be used in under 2 seconds.
+- 📁 **Absolute Paths**: Saves the exact path so you can jump to your projects from anywhere.
+- 🏗️ **Clean Architecture**: Built using Service and Repository patterns for high maintainability and testability.
 
 ---
 
 ## 🛠️ Tech Stack
 
 - **Runtime:** [Node.js](https://nodejs.org/)
-- **Lenguaje:** [TypeScript](https://www.typescriptlang.org/)
-- **Base de Datos:** [SQLite](https://sqlite.org/) (via `better-sqlite3`)
-- **Interfaz de Consola:** [Commander.js](https://github.com/tj/commander.js)
-- **Estilos:** [Picocolors](https://github.com/alexeyraspopov/picocolors)
+- **Language:** [TypeScript](https://www.typescriptlang.org/)
+- **Database:** [SQLite](https://sqlite.org/) (via `better-sqlite3`)
+- **CLI Framework:** [Commander.js](https://github.com/tj/commander.js)
+- **Validation:** [Zod](https://zod.dev/)
+- **Styling:** [Picocolors](https://github.com/alexeyraspopov/picocolors)
+- **Testing:** [Vitest](https://vitest.dev/)
 
 ---
 
-## 🚀 Próximamente (Roadmap)
+## 🚀 Roadmap
 
-Actualmente, **Spot** está en desarrollo activo. Estas son las funciones planeadas:
+**Spot** is under active development. These are the planned and implemented features:
 
-1.  `spot add`: Registrar el directorio actual (Detección inteligente).
-2.  `spot list`: Listar todos los proyectos registrados en una tabla.
-3.  `spot find <query>`: Buscar proyectos por nombre o framework.
-4.  `spot go <nombre>`: Abrir el proyecto directamente en VS Code.
-5.  `spot clean`: Detectar y remover registros de carpetas que ya fueron borradas del disco.
+1.  `spot add`: Register current directory (Smart detection included). ✅
+2.  `spot list`: List all registered projects in a clean table. ✅
+3.  `spot find <query>`: Search projects by name or framework. 🛠️
+4.  `spot go <name>`: Open the project directly in VS Code. 🛠️
+5.  `spot clean`: Detect and remove records of folders already deleted from disk. 🛠️
 
 ---
 
-## 💻 Instalación (Desarrollo)
+## 💻 Installation (Development)
 
-Si quieres probarlo localmente mientras lo desarrollo:
+To try it locally during development:
 
-1. Clona el repositorio:
+1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/tu-usuario/spot.git](https://github.com/tu-usuario/spot.git)
-2. Instala las dependencias:
-    npm install
-3. Compila el proyecto:
-    npm run build
-4. Enlaza el proyecto:
-    npm link
+   git clone [https://github.com/pav-dev98/spot.git](https://github.com/pav-dev98/spot.git)
+2. **Install dependencies:**
+   ```bash
+   npm install
+3. **Build the project:**
+   ```bash
+   npm run build
+4. **Link the project:**
+   ```bash
+   npm link
 
-## 📄 Licencia
-Este proyecto está bajo la Licencia MIT. ¡Siéntete libre de usarlo y mejorarlo!
-Creado con ❤️ para desarrolladores ordenados (o que intentan serlo).
+## 📄 License
+
+This project is under the MIT License. Feel free to use and improve it!
+
+Created with ❤️ by [pav-dev98](https://github.com/pav-dev98).
